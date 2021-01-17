@@ -5,6 +5,7 @@
   --prime-dark : rgba(255,255,255,0);
   --prime-orange : #f9ab00;
   --hover-orange:  #dba919;
+  --prime-red: #DC143C;
 }
 
 body{
@@ -23,6 +24,7 @@ body{
 }
 nav{
   height: 5rem;
+  z-index: 2;
 }
 nav a.nav-link{
   letter-spacing: 0.0375rem;;
@@ -62,6 +64,11 @@ nav ul li{
 .main-info{
   color: var(--prime-white);
   display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -71,4 +78,40 @@ nav ul li{
 .main-info h1{
   color: var(--prime-orange);
   text-transform: uppercase;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Typed Text=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.typed-text{
+  color: var(--prime-white);  
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Contact Me=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.btn-main-offer{
+  border: 1px solid var(--prime-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--prime-white);
+  margin: 2rem;
+}
+.btn-main-offer:hover{
+  text-decoration: none;
+  transition: background-color 0.8s ease;
+  background-color: var(--hover-orange);
+  border: var(--prime-white);
+  font-weight: bold;
+}
+.title{
+  position: absolute;
+  top: 7.5rem;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Particles=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
