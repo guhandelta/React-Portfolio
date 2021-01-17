@@ -1,4 +1,4 @@
-import { Header, Navbar } from './components'
+import { Header, Navbar, Contact } from './components'
 import Particles from 'react-particles-js'
 
 import './App.css';
@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Particles
+        className="particles-canvas"
         params={{
           particles:{
             number:{
@@ -29,6 +30,7 @@ function App() {
       />
       <Navbar />  
       <Header />
+      <Contact />
     </>
   );
 }
