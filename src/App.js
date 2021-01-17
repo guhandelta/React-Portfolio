@@ -1,4 +1,4 @@
-import { Header, Navbar, Contact } from './components'
+import { Header, Navbar } from './components'
 import Particles from 'react-particles-js'
 
 import './App.css';
@@ -30,7 +30,6 @@ function App() {
       />
       <Navbar />  
       <Header />
-      <Contact />
     </>
   );
 }
