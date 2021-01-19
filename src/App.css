@@ -9,7 +9,7 @@
 }
 
 body{
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: "Roboto Condensed" sans-serif;
 }
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Navbar-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -133,3 +133,4 @@ nav ul li{
     display: none;
   }
 }
+
