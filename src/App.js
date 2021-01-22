@@ -21,11 +21,11 @@ function App() {
             shape:{
               type: 'circle',
               stroke: {
-                width: 6,
+                width: 6, 
                 color: '#f9ab00'
               }
             }
-          }
+          } 
         }}
       />
       <Navbar />  
