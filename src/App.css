@@ -5,6 +5,8 @@
   --prime-white : #fff;
   --prime-dark : rgb(59,52,64);
   --prime-light-grey : #f4f4f4s;
+  --prime-dark-grey : #666666;
+  --prime-grey : #ccd1d9;
   --prime-orange : #f9ab00;
   --hover-orange:  #dba919;
   --prime-red: #DC143C;
@@ -167,7 +169,6 @@ nav ul li{
   align-items: center;
 }
 
-/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Services=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .services{
   text-align: center;
@@ -217,3 +218,67 @@ nav ul li{
 .services .box:hover p{
   color: var(--prime-white);
 }
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Experience=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.experience-wrapper{
+  position: absolute;
+  padding: 0.3125rem 0;
+  overflow: hidden;
+}
+
+.experience h1{
+  text-transform: uppercase;
+  color: var(--prime-orange);
+}
+
+.experience-wrapper::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background: var(--prime-grey);
+  z-index: 1;
+}
+
+.timeline-block{
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right{
+  float: right;
+}
+
+.timeline-block-left{
+  float: left;
+  direction: rtl;
+}
+
+.marker{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.3125rem solid var(--prime-dark);
+  background: var(--prime-orange);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content{
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--prime-dark-grey);
+  direction: ltr;
+}  
+  
+.timeline-content h3{
+  margin-top: 0.3125rem;
+  color: var(--prime-red);
+  font-weight: 900;
+}
+
