@@ -221,7 +221,7 @@ nav ul li{
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Experience=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .experience-wrapper{
-  position: absolute;
+  position: relative;
   padding: 0.3125rem 0;
   overflow: hidden;
 }
@@ -258,6 +258,14 @@ nav ul li{
   float: left;
   direction: rtl;
 }
+.timeline-block-left h3{
+  float: left;
+  padding-left: 65%;
+  /* direction: rtl; */
+}
+.timeline-block-left p{
+  direction: rtl;
+}
 
 .marker{
   width: 1rem;
@@ -281,4 +289,3 @@ nav ul li{
   color: var(--prime-red);
   font-weight: 900;
 }
-

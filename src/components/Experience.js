@@ -17,7 +17,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content"> 
-                        <h3>2012 - 2015</h3>
+                        <h3>2012 - 2015</h3><br/><br/>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2012 - 2015</h3>
+                        <h3>2012 - 2015</h3><br/><br/>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2012 - 2015</h3>
+                        <h3>2012 - 2015</h3><br/><br/>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2012 - 2015</h3>
+                        <h3>2012 - 2015</h3><br/><br/>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
                     </div>
                 </div>
