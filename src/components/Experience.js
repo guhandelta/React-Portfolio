@@ -1,4 +1,4 @@
-import React from 'react'
+import { Work } from '../constants/Experience'
 
 const Experience = () => {
     return (
@@ -7,62 +7,35 @@ const Experience = () => {
                 <h3>My Experience</h3>
             </div>
             <div className="container experience-wrapper">
-                <div className="timeline-block timeline-block-right">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2012 - 2015</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-left">
-                    <div className="marker"></div>
-                    <div className="timeline-content"> 
-                        <h3>2012 - 2015</h3><br/><br/>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-right">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2012 - 2015</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-left">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2012 - 2015</h3><br/><br/>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-right">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2012 - 2015</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-left">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2012 - 2015</h3><br/><br/>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-right">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2012 - 2015</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
-                <div className="timeline-block timeline-block-left">
-                    <div className="marker"></div>
-                    <div className="timeline-content">
-                        <h3>2012 - 2015</h3><br/><br/>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ipsam! Tempore provident eius fugit autem sint. Officiis ut tempora facilis accusantium officia voluptatem explicabo temporibus incidunt, ratione, nisi molestiae porro?</p>
-                    </div>
-                </div>
+                {
+                    Work.map(({ id, time, work, role, company })=>{
+                        if(id%2!==0){
+                           return(
+                            <div key={id} className="timeline-block timeline-block-left">
+                                <div className="marker"></div>
+                                <div className="timeline-content-left">
+                                    <h5>{role}</h5>
+                                    <h6>{company}</h6>
+                                    <h6>{time}</h6>
+                                    <p>{work}</p>
+                                </div>
+                            </div>
+                           )
+                            }else{
+                            return(
+                                <div key={id} className="timeline-block timeline-block-right">
+                                    <div className="marker"></div>
+                                    <div className="timeline-content-right">
+                                        <h5>{role}</h5>
+                                        <h6>{company}</h6>
+                                        <h6>{time}</h6>
+                                        <p>{work}</p>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    })
+                }
             </div>
         </div>
     )

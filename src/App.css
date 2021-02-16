@@ -169,8 +169,10 @@ nav ul li{
   align-items: center;
 }
 
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Services-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .services{
+  padding-top: 5rem;
   text-align: center;
   padding-bottom: 2rem;
   background: var(--prime-light-grey);
@@ -178,7 +180,9 @@ nav ul li{
 
 .services h1{
   font-family: "Potta One", cursive !important;
-  color: var(--prime-dark);
+  color: var(--prime-orange);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 .services .circle{
   position: relative;
@@ -202,6 +206,7 @@ nav ul li{
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--prime-white);
+  transition: 0.3s ease-in-out;
 }
 .services .box:hover{
   background: var(--prime-orange);
@@ -219,6 +224,9 @@ nav ul li{
   color: var(--prime-white);
 }
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Experience=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.experience{
+  padding: 0.7rem;
+}
 
 .experience-wrapper{
   position: relative;
@@ -226,7 +234,8 @@ nav ul li{
   overflow: hidden;
 }
 
-.experience h1{
+.experience h3{
+  font-family: "Potta One", cursive !important;
   text-transform: uppercase;
   color: var(--prime-orange);
 }
@@ -277,15 +286,47 @@ nav ul li{
   z-index: 3;
 }
 
-.timeline-content{
+.timeline-content-left{
   width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--prime-dark-grey);
+  direction: rtl;
+}  
+  
+.timeline-content-left h5, h6{
+  margin-top: 0.3125rem;
+  color: var(--prime-red);
+  font-weight: 900;
+}
+
+.timeline-content-right{
+  width: 100%;
   padding: 0 0.9375rem;
   color: var(--prime-dark-grey);
   direction: ltr;
 }  
   
-.timeline-content h3{
+.timeline-content-right h5, h6{
   margin-top: 0.3125rem;
   color: var(--prime-red);
   font-weight: 900;
+}
+/* --------------Media-------------- */
+@media(max-width:768px){
+  .experience .container{
+    padding-left: 0;
+  }
+  .experience-wrapper::before{
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .timeline-block-right{
+    float: none;
+    width: 100%;
+  }
+  .timeline-block-left{
+    float: none;
+    width: 100%;
+    direction: ltr;
+  }
 }

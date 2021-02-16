@@ -4,7 +4,7 @@ import '../App.css'
 
 const AboutMe = () => {
     return (
-       <div className="container py-5 tab" id="aboutme">
+       <div className="container my-5 py-5 tab" id="aboutme">
            <div className="row">
                <div className="col-lg-6 col-xm-12">
                     <div className="photowrap mb-5">
