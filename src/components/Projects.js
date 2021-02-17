@@ -1,33 +1,61 @@
-import portfolio from '../images/projects/portfolio.png'
-import covidChart from '../images/projects/covidChart.png'
-import cryptodash from '../images/projects/cryptodash.png'
-import coffeeShop from '../images/projects/coffeeShop.png'
+import { portfolio, covidChart, cryptodash, coffeeShop } from '../images/projects'
+/* FontAwesome Imports */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 
 const Projects = () => {
     return (
         <>
             <div className="projects-wrapper" id="projects">
                 <div className="container">
-                    <hi className="text-uppercase text-center py-5">projects</hi>
-                    {/* */}
-                    <div className="image-box-wrapper row justify-content-center"> {/* tooltip*/}
-                        <img src={portfolio} alt="project Website | NextJS NodeJS" className="project-image"/>
-                        <span className="tooltiptext">Portfolio Website | NextJS NodeJS</span>
+                    <h1 className="text-uppercase text-center py-5">projects</h1><br/><br/>
+                    <div className="logo-header py-1">
+                        <h3 className="github-header">
+                            <a href="https://github.com/guhandelta" target="_blank" rel="noreferrer">
+                                <FontAwesomeIcon className="project-icon-github" icon={faGithub} />
+                            </a>
+                                <FontAwesomeIcon className="project-icon-github-replica" icon={faGithub} />
+                        </h3>
+                        <div className="profile-text">
+                            <h5 className="text-uppercase text-center my">my </h5>&emsp;&emsp;&emsp;&emsp;
+                            <h5 className="text-uppercase text-center profile"> profile</h5>
+                        </div>
                     </div>
                     {/* */}
-                    <div className="image-box-wrapper row justify-content-center"> {/* tooltip*/}
-                        <img src={covidChart} alt="Covid Chart | ReactJS ChartJS" className="project-image"/>
-                        <span className="tooltiptext">Covid Chart | ReactJS ChartJS</span>
-                    </div>
+                    <div className="image-box-wrapper row justify-content-center my-4"> {/* tooltip*/}
+                        <div className="project-image-box">
+                            <img src={portfolio} alt="project Website | NextJS NodeJS" className="project-image"/> <br/>
+                            <div className="overflow">
+                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                            </div>
+                        </div>
+                        {/* <span className="tooltiptext">Portfolio Website | NextJS NodeJS</span> */}
                     {/* */}
-                    <div className="image-box-wrapper row justify-content-center"> {/* tooltip*/}
-                        <img src={cryptodash} alt="Cryptocurrency Dashboard | ReactJS Highcharts" className="project-image"/>
-                        <span className="tooltiptext">Cryptocurrency Dashboard | ReactJS Highcharts</span>
-                    </div>
+                        <div className="project-image-box">
+                            <img src={covidChart} alt="Covid Chart | ReactJS ChartJS" className="project-image"/> <br/>
+                            <div className="overflow">
+                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                            </div>
+                        </div>
+                        {/* <span className="tooltiptext">Covid Chart | ReactJS ChartJS</span> */}
                     {/* */}
-                    <div className="image-box-wrapper row justify-content-center"> {/* tooltip*/}
-                        <img src={coffeeShop} alt="Coffeeshop | GastbyJS Snipcart" className="project-image"/>
-                        <span className="tooltiptext">Coffeeshop | GastbyJS Snipcart</span>
+                        <div className="project-image-box">
+                            <img src={cryptodash} alt="Cryptocurrency Dashboard | ReactJS Highcharts" className="project-image"/> <br/>
+                            <div className="overflow">
+                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                            </div>
+                        </div>
+                        {/* <span className="tooltiptext">Cryptocurrency Dashboard | ReactJS Highcharts</span> */}
+                    {/* */}
+                        <div className="project-image-box">
+                            <img src={coffeeShop} alt="Coffeeshop | GastbyJS Snipcart" className="project-image"/> <br/>
+                            <div className="overflow">
+                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                            </div>
+                        </div>
+                        {/* <span className="tooltiptext">Coffeeshop | GastbyJS Snipcart</span> */}
                     </div>
                 </div>
             </div>

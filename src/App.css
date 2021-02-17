@@ -11,6 +11,7 @@
   --hover-orange:  #dba919;
   --prime-red: #DC143C;
   --prime-blue: #00BFFF;
+  --prime-black: #000;
 }
 
 body{
@@ -75,7 +76,7 @@ nav ul li{
   bottom: 0;
   left: 0;
   right: 0;
-  flex-direction: column;
+  direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -333,6 +334,9 @@ nav ul li{
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=Projects=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 .projects-wrapper{
+  display: flex;
+  flex-direction: column;
+
   background:var(--prime-light-grey);
   padding: 3rem 0;
 }
@@ -341,8 +345,112 @@ nav ul li{
   border: 1px solid var(--prime-orange);
   padding: 0 0.5rem;
 }
+.project-image-box{
+  position: relative;
+  margin: 1rem;
+  padding-top: 0.6250rem;
+  padding: 0.3125rem 0;
+}
+.overflow{
+  position: absolute;
+  opacity: 0;
+  background: var(--prime-black);
+  width: 15rem;
+  height: 7.5rem;
+  top: 0;
+  border: 1px solid var(--prime-red);
+  cursor: pointer;
+}
+.project-image-box:hover .overflow{
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
+.project-icon{
+  position: absolute;
+  opacity: 0.2;
+  margin-left: 6.5rem;
+  margin-top: 3rem;
+  color: var(--prime-orange);
+  font-size: 1.5rem;
+}
+.overflow:hover .project-icon{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.profile-text{
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 6rem;
+  margin: 0 43.5%;
+  height: 5rem;
+  margin-top: -5rem;
+  padding-top: 2.2rem;
+  padding-left: 0.9rem;
+  font-weight: 500 !important;
+}
+.project-icon-github{
+  position: absolute;
+  opacity: 0.8;
+  margin-left: 1%;
+  margin-top: 0.7rem; 
+  scale: 1.4;
+  color: var(--prime-white);
+  font-size: 1.5rem;
+  z-index: 1;
+}
 
-  /*=-=-=-=-=-=-Tooltip=-=-=-=-=-=-=-*/
+.logo-header{
+  height: 3rem;
+  border: 1ps double var(--prime-black);
+  margin-top: -2rem;
+  margin-left: -2.5rem;
+}
+.github-header{
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 0.2 rem;
+  margin-bottom: 4 rem;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 48%;
+  border-radius: 15%;
+  z-index: 1;
+}
+.project-icon-github-replica{
+  opacity: 0;
+  scale: 1.25;
+  margin: 0.5rem;
+}
+.github-header:hover .project-icon-github-replica{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.logo-header:hover .github-header{
+  background: var(--prime-white);
+}
+.logo-header:hover .profile-text{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.logo-header:hover .github-header > .project-icon-github{
+  /* opacity: 1; */
+  color: var(--prime-black);
+  transition: 0.3s ease-in-out;
+  background: var(--prime-white);
+}
+.logo-header:hover .github-header > .project-icon-github-replica{
+  color: var(--prime-black) !important;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.github-text{
+  margin-top: -3rem;
+  scale: 1.4;
+  z-index: 0.5;
+}
+
+  /*=-=-=-=-=-=-Tooltip=-=-=-=-=-=-=-* / 
   .tooltip {
     position: relative;
     display: inline-block;
@@ -352,17 +460,17 @@ nav ul li{
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    /* background-color: black; */
+    /* background-color: black; * / 
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
 
-    /* Position the tooltip */
+    /* Position the tooltip * / 
     position: absolute;
     z-index: 1;
   }
 
   .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+  } */
