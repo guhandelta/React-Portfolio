@@ -1,11 +1,17 @@
+/* React Popupbox */
+import { PopupboxContainer, PopupboxManager } from 'react-popupbox'
+/* Image Imports*/
 import { portfolio, covidChart, cryptodash, coffeeShop } from '../images/projects'
 /* FontAwesome Imports */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+/* React PopupBox Css */
+import 'react-popupbox/dist/react-popupbox.css'
 
 
 const Projects = () => {
+    
     return (
         <>
             <div className="projects-wrapper" id="projects">
@@ -28,7 +34,9 @@ const Projects = () => {
                         <div className="project-image-box">
                             <img src={portfolio} alt="project Website | NextJS NodeJS" className="project-image"/> <br/>
                             <div className="overflow">
-                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                <a href="https://guhaprasaanth.vercel.app" target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                </a>
                             </div>
                         </div>
                         {/* <span className="tooltiptext">Portfolio Website | NextJS NodeJS</span> */}
@@ -36,7 +44,9 @@ const Projects = () => {
                         <div className="project-image-box">
                             <img src={covidChart} alt="Covid Chart | ReactJS ChartJS" className="project-image"/> <br/>
                             <div className="overflow">
-                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                <a href="https://ngp-react-covid19-info.netlify.app/"  target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                </a>
                             </div>
                         </div>
                         {/* <span className="tooltiptext">Covid Chart | ReactJS ChartJS</span> */}
@@ -44,7 +54,9 @@ const Projects = () => {
                         <div className="project-image-box">
                             <img src={cryptodash} alt="Cryptocurrency Dashboard | ReactJS Highcharts" className="project-image"/> <br/>
                             <div className="overflow">
-                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                <a href="https://ngp-react-cryptocurerncy-dashboard.netlify.app/"  target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                </a>
                             </div>
                         </div>
                         {/* <span className="tooltiptext">Cryptocurrency Dashboard | ReactJS Highcharts</span> */}
@@ -52,7 +64,9 @@ const Projects = () => {
                         <div className="project-image-box">
                             <img src={coffeeShop} alt="Coffeeshop | GastbyJS Snipcart" className="project-image"/> <br/>
                             <div className="overflow">
-                                <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                <a href="https://ngp-gatsby-coffeeshop.netlify.app/"  target="_blank" rel="noreferrer">
+                                    <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+                                </a>
                             </div>
                         </div>
                         {/* <span className="tooltiptext">Coffeeshop | GastbyJS Snipcart</span> */}
