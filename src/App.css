@@ -348,7 +348,7 @@ nav ul li{
 .projects-wrapper{
   display: flex;
   flex-direction: column;
-
+  
   background:var(--prime-light-grey);
   padding: 3rem 0;
 }
@@ -463,13 +463,39 @@ nav ul li{
   z-index: 0.5;
 }
 
-  /* =-=-=-=-=--=Media-=-=-=-=-=-=-=-= */
-  @media(max-width:570px){
-    .projects-wrapper{
-      height: 90%;
-    }
-    .project-image-box{
-      width: 50%;
-
-    }
+/* =-=-=-=-=--=Media-=-=-=-=-=-=-=-= */
+@media(max-width:570px){
+  .projects-wrapper{
+    height: 90%;
   }
+  .project-image-box{
+    width: 50%;
+    
+  }
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=Contact Me=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.contact{
+  background: var(--prime-dark);
+  padding: 3rem 0;
+}
+.contact h1{
+  color: var(--prime-orange);
+  padding: 1.3rem 0;
+}
+.contact p{
+  color: var(--prime-white);
+  font-size: 1.2rem;
+}
+.details{
+  margin-bottom: 0.5rem;
+}
+.contact-btn{
+  border-radius: 0.5rem;
+}
+.contact-btn:hover{
+  color: var(--prime-light-grey);
+  font-weight: 400;
+  transition: 0.4s ease-in-out;
+}
