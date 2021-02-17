@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@font-face {
+  font-family: 'Anurati';
+  src: url('./fonts/AnuratiRegular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root{
   --prime-white : #fff;
@@ -334,6 +340,11 @@ nav ul li{
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=Projects=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.projects-wrapper h1{
+  color: var(--hover-orange);
+  font-family: 'Anurati', 'Helvetica' !important;
+}
 .projects-wrapper{
   display: flex;
   flex-direction: column;
@@ -452,27 +463,13 @@ nav ul li{
   z-index: 0.5;
 }
 
-  /*=-=-=-=-=-=-Tooltip=-=-=-=-=-=-=-* / 
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  /* =-=-=-=-=--=Media-=-=-=-=-=-=-=-= */
+  @media(max-width:570px){
+    .projects-wrapper{
+      height: 90%;
+    }
+    .project-image-box{
+      width: 50%;
+
+    }
   }
-
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    /* background-color: black; * / 
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip * / 
-    position: absolute;
-    z-index: 1;
-  }
-
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  } */
