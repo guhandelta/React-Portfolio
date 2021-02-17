@@ -467,10 +467,35 @@ nav ul li{
 @media(max-width:570px){
   .projects-wrapper{
     height: 90%;
+    align-items: center;
+    /* padding: 0 1rem; */
+    padding-left: -1rem;
+    margin: 1rem 1rem 0 -0.5rem;
+  }
+  .container{
+    margin-left: -5rem;
+    margin-right: 2rem;
+  }
+  .projects-wrapper h1{
+    margin-left: 2.5rem;
   }
   .project-image-box{
     width: 50%;
-    
+  }
+  .project-icon-github-replica{
+    margin-left: 0.2rem;
+  }
+  .profile-text{
+    right: 1.5rem;
+  }
+  .github-header{
+    padding: 0 0.5rem;
+  }
+  .my{
+    margin-left: -2.3rem;
+  }
+  .image-box-wrapper{
+    margin-left: -3.5rem !important;
   }
 }
 
@@ -481,6 +506,7 @@ nav ul li{
   padding: 3rem 0;
 }
 .contact h1{
+  font-family: "Potta One", cursive !important;
   color: var(--prime-orange);
   padding: 1.3rem 0;
 }
@@ -493,9 +519,52 @@ nav ul li{
 }
 .contact-btn{
   border-radius: 0.5rem;
+  font-family: Anurati;
+  margin: 1rem 0 0 0;
+  width: 100%;
 }
 .contact-btn:hover{
   color: var(--prime-light-grey);
   font-weight: 400;
   transition: 0.4s ease-in-out;
 }
+.contact input{
+  margin-bottom: 1rem;
+}
+.contact input, .contact textarea{
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--prime-dark-grey);
+  border-radius: 0;
+  color: var(--prime-grey);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  padding-left: 0 !important;
+}
+.contact .container{
+  padding: 4rem 0;
+}
+.contact input:focus, .contact textarea:focus{
+  background: transparent;
+  color: var(--hover-orange);
+  border-bottom: 0.125rem solid var(--prime-dark-grey);
+  
+}
+.contact textarea{
+  height: 12.4rem !important;
+}
+
+ /*-=-=-=-=-=-=-=Media-=-=-=-=-=-=-=-=*/
+ @media(max-width:768px){
+   .contact .container{
+      padding: 0 1rem;;
+   }
+   .contact p{
+     font-size: 1rem;
+     padding: 1rem;
+   }
+  }
