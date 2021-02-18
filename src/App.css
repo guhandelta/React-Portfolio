@@ -502,6 +502,13 @@ nav ul li{
   }
   .my{
     margin-left: -2.3rem;
+    font-weight: 700 !important;
+    font-family: Anurati !important;
+  }
+  .profile{
+    /* margin-left: -2.3rem; */
+    font-weight: 700 !important;
+    font-family: Anurati !important;
   }
   .image-box-wrapper{
     margin-left: -3.5rem !important;
@@ -513,6 +520,15 @@ nav ul li{
 .contact{
   background: var(--prime-dark);
   padding: 3rem 0;
+  /* height: 10rem; */
+  border-radius: 1px double var(--prime-white);
+}
+/* To make placeholders unselectable */
+.contact :placeholder-shown{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
 }
 .contact h1{
   font-family: "Potta One", cursive !important;
@@ -522,13 +538,14 @@ nav ul li{
 .contact p{
   color: var(--prime-white);
   font-size: 1.2rem;
+  font-style: italic;
 }
 .details{
   margin-bottom: 0.5rem;
 }
 .contact-btn{
   border-radius: 0.5rem;
-  font-family: Anurati;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   margin: 1rem 0 0 0;
   width: 100%;
 }
@@ -537,9 +554,9 @@ nav ul li{
   font-weight: 400;
   transition: 0.4s ease-in-out;
 }
-.contact input{
-  margin-bottom: 1rem;
-}
+/* .contact input{
+  /* margin-bottom: 1rem; /
+} */
 .contact input, .contact textarea{
   width: 100%;
   box-sizing: border-box;
@@ -561,7 +578,6 @@ nav ul li{
   background: transparent;
   color: var(--hover-orange);
   border-bottom: 0.125rem solid var(--prime-dark-grey);
-  
 }
 .contact textarea{
   height: 12.4rem !important;
@@ -586,7 +602,21 @@ input.form-control{
 textarea.form-control{
   margin-bottom: -0.4rem;
 }
-
+.error-message{
+  color: var(--prime-orange);
+  text-shadow: 2px 2px 5px var(--prime-orange);
+  text-align: left;
+  border-radius: 0.5rem;
+  margin-top: -0.3rem;
+  padding: 0 0.5rem 0 -0.5rem;
+}
+.prob{
+  max-height: 1.6rem;
+  left: 0;
+}
+.desc{
+  margin: 0 0.4rem;
+}
  /*-=-=-=-=-=-=-=Media-=-=-=-=-=-=-=-=*/
  @media(max-width:768px){
    .contact .container{
