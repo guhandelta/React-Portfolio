@@ -76,7 +76,7 @@ nav ul li{
 
 .main-info{
   color: var(--prime-white);
-  display: flex;
+  display: block;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -93,18 +93,25 @@ nav ul li{
   text-transform: uppercase;
   position: absolute;
   top: 7.5rem;
+  left: 30%;
 }
-
-/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Typed Text=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.titleSub{
+  margin-top: 15rem;
+}
+.titleSub .typed-text{
+  margin-top: 2rem;
+}
+    /*=-=-=-=-=-=-=-=--=-=-=-=-Typed Text=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .typed-text{
   color: var(--prime-white);  
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  margin-top: 8rem;
 }
 
-/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Contact Me=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+    /*=-=-=-=-=-=-=-=-=-=-=-=-=-Contact Me=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 .btn-main-offer{
   border: 1px solid var(--prime-red);
   text-transform: uppercase;
@@ -120,9 +127,7 @@ nav ul li{
   border: var(--prime-white);
   font-weight: bold;
 }
-/* .title{
 
-} */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Particles=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 .tsparticles-canvas-el{
   position: absolute;
@@ -135,12 +140,16 @@ nav ul li{
   .navbar-brand{
     width: 7rem;
   }
+  .main-info{
+    display: block;
+  }
   .main-info h1{
     font-size: 1.7rem !important;
     top: 12rem;
   }
   .typed-text{
     font-size: 1.1rem !important;
+    margin: 2rem;
   }
   .particles-canvas{
     display: none;
@@ -437,25 +446,25 @@ nav ul li{
 }
 .github-header:hover .project-icon-github-replica{
   opacity: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .logo-header:hover .github-header{
   background: var(--prime-white);
 }
 .logo-header:hover .profile-text{
   opacity: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .logo-header:hover .github-header > .project-icon-github{
   /* opacity: 1; */
   color: var(--prime-black);
-  transition: 0.3s ease-in-out;
+  transition: 0.7s ease-in-out;
   background: var(--prime-white);
 }
 .logo-header:hover .github-header > .project-icon-github-replica{
   color: var(--prime-black) !important;
   opacity: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .github-text{
   margin-top: -3rem;

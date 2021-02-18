@@ -1,5 +1,5 @@
 /* React Popupbox */
-import { PopupboxContainer, PopupboxManager } from 'react-popupbox'
+// import { PopupboxContainer, PopupboxManager } from 'react-popupbox'
 /* Image Imports*/
 import { portfolio, covidChart, cryptodash, coffeeShop } from '../images/projects'
 /* FontAwesome Imports */
