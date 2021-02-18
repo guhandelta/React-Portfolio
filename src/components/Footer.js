@@ -1,3 +1,13 @@
+import {
+    FacebookShareButton,
+    FacebookIcon,
+    TwitterShareButton,
+    TwitterIcon,
+    LinkedinShareButton,
+    LinkedinIcon,
+    RedditShareButton,
+    RedditIcon
+} from 'react-share'
 
 const Footer = () => {
     return (
@@ -6,7 +16,8 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="d-flex">
-                            Central Studio Road, Singanallur, Coimbatore
+                            {/* Central Studio Road, Singanallur, Coimbatore */}
+                            Charlotte, North Carolina
                         </div>
                         <div className="d-flex">
                             <a href="tel:777-777-7777">(+91) 987-654-3210</a>
@@ -33,6 +44,41 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-5 col-md-6 col-sm-6 align-items-center">
+                        <div className="d-flex justify-content-center">
+                            <FacebookShareButton
+                                url={"https://guhaprasaanth.vercel.app"}
+                                quote={"Fullstack Developer"}
+                                hashtag="#javascript"
+                            >
+                                <FacebookIcon className="mx-3" size={36} />
+                            </FacebookShareButton>
+                            <TwitterShareButton
+                                url={"https://guhaprasaanth.vercel.app"}
+                                quote={"Fullstack Developer"}
+                                hashtag="#javascript"
+                            >
+                                <TwitterIcon className="mx-3" size={36} />
+                            </TwitterShareButton>
+                            <LinkedinShareButton
+                                url={"https://linkedin.com/in/guhaprasaanthnandagopal"}
+                                quote={"Fullstack Developer"}
+                                hashtag="#javascript"
+                            >
+                                <LinkedinIcon className="mx-3" size={36} />
+                            </LinkedinShareButton>
+                            <RedditShareButton
+                                url={"https://guhaprasaanth.vercel.app"}
+                                quote={"Fullstack Developer"}
+                                hashtag="#javascript"
+                            >
+                                <RedditIcon className="mx-3" size={36} />
+                            </RedditShareButton>
+                        </div>
+                    </div>
+                    <p className="pt-3 text-center">
+                        Copyright&copy; { new Date().getFullYear()}&nbsp; | All Rights Reserved
+                    </p>
                 </div>
             </div>
         </div>
