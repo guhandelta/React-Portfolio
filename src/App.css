@@ -556,9 +556,6 @@ nav ul li{
   font-weight: 400;
   transition: 0.4s ease-in-out;
 }
-/* .contact input{
-  /* margin-bottom: 1rem; /
-} */
 .contact input, .contact textarea{
   width: 100%;
   box-sizing: border-box;
@@ -624,13 +621,35 @@ textarea.form-control{
 .desc{
   margin: 0 0.4rem;
 }
- /*-=-=-=-=-=-=-=Media-=-=-=-=-=-=-=-=*/
- @media(max-width:768px){
-   .contact .container{
-      padding: 0 1rem;;
-   }
-   .contact p{
-     font-size: 1rem;
-     padding: 1rem;
-   }
+/*-=-=-=-=-=-=-=Media-=-=-=-=-=-=-=-=*/
+@media(max-width:768px){
+  .contact .container{
+    padding: 0 1rem;;
   }
+  .contact p{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=Footer=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.footer{
+  background: var(--prime-black);
+  color: var(--prime-dark-grey);
+  padding: 3rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--prime-dark-grey);
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: var(--prime-orange);
+  cursor: pointer;
+}
+
+.footer p{
+  margin-bottom: 0;
+}
