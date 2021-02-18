@@ -8,30 +8,32 @@ const Contact = () => {
     const [ successMessage, setSuccessMessage ] = useState('');
 
     const serviceId = "service_ID";
-    const templateId = "template_ID";
-    const { USER_ID: userId } = process.env;
+    const templateID = "template_ID";
+    // const { USER_ID: userId } = process.env;
+    const userID = "user_pflZnuyiNdTz0NAW0NAx8";
 
-    const onSubmit = (data, r)=> {
+    const onSubmit = (data, r) => {
         sendEmail(
             serviceId,
-            templateId,
-            {
-                name: data.name,
-                phone: data.phone,
-                email: data.email,
-                subject: data.subject,
-                description: data.description,
-            },
-            userId
+          templateID,
+          {
+            name: data.name,
+            phone: data.phone,
+            email: data.email,
+            subject: data.subject,
+            description: data.description
+          },
+          userID
         )
         r.target.reset();
-    }
-
-    const sendEmail = ({ serviceId, templateId, variables, userId }) =>{
-        emailjs.send(serviceId, templateId, variables, userId)
-               .then(() => setSuccessMessage('Form sent Successfully!!, I will reach out to you as soon as possible.'), 
-                     err => console.error(`Sorry somehting went wrong ${err}`));
-    }    
+      }
+    
+      const sendEmail = (serviceID, templateID, variables, userID) => {
+        emailjs.send(serviceID, templateID, variables, userID)
+          .then(() => {
+            setSuccessMessage("Form sent successfully! I'll contact you as soon as possible.");
+          }).catch(err => console.error(`Something went wrong ${err}`));
+      }    
 
     return (
         <>
@@ -39,6 +41,7 @@ const Contact = () => {
                     <div className="text-center">
                     <h1>Contact Me</h1>
                     <p>Please fill out the form and I will reach out to you as soon as possible</p>
+                    <span className="success-message">{successMessage}</span>
                 </div>
                 <div className="container">
                     <form onSubmit={handleSubmit(onSubmit)}>

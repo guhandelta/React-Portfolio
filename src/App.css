@@ -16,6 +16,8 @@
   --prime-orange : #f9ab00;
   --hover-orange:  #dba919;
   --prime-red: #DC143C;
+  --prime-green: green;
+  --prime-glow-green: #00FF7F;
   --prime-blue: #00BFFF;
   --prime-black: #000;
 }
@@ -604,11 +606,16 @@ textarea.form-control{
 }
 .error-message{
   color: var(--prime-orange);
-  text-shadow: 2px 2px 5px var(--prime-orange);
+  text-shadow: 0.125rem 0.125rem 0.313rem var(--prime-orange);
   text-align: left;
   border-radius: 0.5rem;
   margin-top: -0.3rem;
   padding: 0 0.5rem 0 -0.5rem;
+}
+.success-message{
+  font-weight: 900;
+  color: var(--prime-green);
+  text-shadow: 0.25rem 0.45rem 025 var(--prime-glow-green) ;
 }
 .prob{
   max-height: 1.6rem;
